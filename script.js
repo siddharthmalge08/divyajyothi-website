@@ -7,6 +7,7 @@ function sendQuote(e){
 
  const name=document.getElementById("name").value.trim();
  const phone=document.getElementById("phone").value.trim();
+ const location=document.getElementById("location").value.trim();
  const req=document.getElementById("req").value.trim();
 
  const message =
@@ -14,6 +15,7 @@ function sendQuote(e){
    "New Website Enquiry\n" +
    "Name: " + name + "\n" +
    "Phone: " + phone + "\n" +
+   "Delivery Location: " + location + "\n" +
    "Requirement: " + req;
 
  const encodedMessage = encodeURIComponent(message);
